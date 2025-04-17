@@ -26,7 +26,7 @@ func GetMyLocation(city string) (*GeoData, error) {
 			City: city,
 		}, nil
 	}
-	resp, err := http.Get("https://ipapi.co/json/")
+	resp, err := http.Get("http://ipwho.is/")
 	if err != nil {
 		return nil, err
 	}
